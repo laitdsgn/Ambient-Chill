@@ -1,0 +1,143 @@
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+.container {
+    width: 100%;
+
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+* {
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+
+
+.card {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    margin: 10px;
+    transition: transform 0.5s;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+
+}
+
+#c1 {
+    background-image: url(thumbnails/1.jpg);
+    background-size: cover;
+    background-position: 0 -30px;
+}
+
+#c2 {
+    background-image: url(thumbnails/2.jpg);
+    background-size: cover;
+}
+
+#c3 {
+    background-image: url(thumbnails/3.jpg);
+    background-size: cover;
+}
+
+#c4 {
+    background-image: url(thumbnails/4.jpg);
+    background-size: cover;
+    background-size: 110%;
+}
+
+#c5 {
+    background-image: url(thumbnails/5.jpg);
+    background-size: cover;
+}
+
+#c6 {
+    background-image: url(thumbnails/6.jpg);
+    background-size: cover;
+}
+
+
+
+.cards {
+    width: 1800px;
+    margin: 30px;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    text-align: center;
+    justify-content: center; 
+}
+
+
+#feet {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+}
+
+
+.animate-character
+{
+
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  font-size: 45px;
+  position: relative;
+  top: 15px;
+  margin: 10px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.container {
+    min-width: 100%;
+
+}
+
+header {
+    background-color: #0f0f0f;
+    color: white;
+    padding: 10px;
+
+}
+
+#feet .buttons {
+
+    margin: 20px;
+    float: right;
+}
